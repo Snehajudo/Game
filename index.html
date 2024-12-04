@@ -1,0 +1,84 @@
+<html>
+ <head>
+   <title></title>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+#animal-image {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.option {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.option:hover {
+    background: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+ </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Guess the Animal</h1>
+        <div class="quiz">
+            <img src="animal.jpg" alt="Animal" id="animal-image">
+            <div class="options">
+                <button class="option" onclick="checkAnswer(this)">Lion</button>
+                <button class="option" onclick="checkAnswer(this)">Elephant</button>
+                <button class="option" onclick="checkAnswer(this)">Tiger</button>
+            </div>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+  </body>
+</html>
